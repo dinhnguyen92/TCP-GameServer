@@ -80,7 +80,7 @@ robot position z 		|	(32-bit) float (4 bytes)
 3. The user must be able to input the server's port number from the command line during set up
 
 A tutorial on basic TCP socket programming and the use of select() was provided by prof. GauthierDickey
-Any time code samples from the tutorial were used to set up the TCP sockets, prof. GauthierDickey was credited in the comments.
+Anytime code samples from the tutorial were used to set up the TCP sockets, prof. GauthierDickey was credited in the comments.
 If there's any uncredited codes, it's the sole responsibility of the developer.
 No other design of implementation details were provided.
 			 
