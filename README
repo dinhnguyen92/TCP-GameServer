@@ -6,8 +6,8 @@ Developer: Nguyen Dinh Nguyen
 Date of Completion: March 12, 2016
 
 The game server is the first part of the "TCP Server with Select" for the Computer Networking class	
-taught by Prof. Christopher GauthierDickey at the University of Denver.
-
+taught by Prof. Christopher GauthierDickey at the University of Denver. 
+The second part is the TCP PlayerClient project.
 
 The server is designed to host a simple game in which the playing space takes place on a 1.0 by 1.0 by 1.0 sized map. 	
 In this game, the players control robots that move around the field and have one ability, self-annihilate. 	
