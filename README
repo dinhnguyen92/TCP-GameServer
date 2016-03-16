@@ -43,32 +43,32 @@ player ID (32-bit) | integer (4 bytes)
 2. Server map update:
 Sent to all players to all the players 20 times per second. Used to update all players with the state of the map. Contains:
 
-number of robots on map (16-bit) |	integer (2 bytes)
-robot ID (32-bit)		 		 |	integer (4 bytes)
-robot position x (32-bit)	 	 |	floating point (4 bytes)
-robot position y (32-bit)		 |	floating point (4 bytes)
-robot position z (32-bit)		 |	floating point (4 bytes)
-...  								...
+number of robots on map (16-bit) 	|	integer (2 bytes)
+robot ID (32-bit)		 	|	integer (4 bytes)
+robot position x (32-bit)	 	|	floating point (4 bytes)
+robot position y (32-bit)		|	floating point (4 bytes)
+robot position z (32-bit)		|	floating point (4 bytes)
+...  						...
 
 The number of robots to include in the message depends on the number of live robots on the map
 
 3. Self-annihilation result:
 Sent to all players after a self-annihilation event. Used to update all players of the players killed by the explosion. Contains:
 
-ID of self-annihilation initiator (32-bit) | 	unsigned integer (4 bytes)
-Number of robots affected (16-bit)		   |	unsigned integer (2 bytes)
-ID of robot annihilated (32-bit)		   |	unsigned integer (4 bytes)
-... 											... 
+ID of self-annihilation initiator (32-bit) 	| 	unsigned integer (4 bytes)
+Number of robots affected (16-bit)		|	unsigned integer (2 bytes)
+ID of robot annihilated (32-bit)		|	unsigned integer (4 bytes)
+... 							... 
 			
 The number of robots to include in the message depends on the number of robots killed
 			
 4. Player spawn event
 Sent to all players except the newly spawn player after the new player has been spawn on the map. Contains:
 
-robot ID (32-bit)		  |	integer (4 bytes)
-robot position x (32-bit) |	float (4 bytes)
-robot position y (32-bit) |	float (4 bytes)
-robot position z (32-bit) |	float (4 bytes)
+robot ID (32-bit)		|	integer (4 bytes)
+robot position x (32-bit) 	|	float (4 bytes)
+robot position y (32-bit) 	|	float (4 bytes)
+robot position z (32-bit) 	|	float (4 bytes)
 	
 	
 **********************
